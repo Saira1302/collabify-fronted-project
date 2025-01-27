@@ -1,0 +1,345 @@
+
+
+.hero-section {
+    height: 100vh; 
+    background-image: url('social-media-1233873_1280.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    position: relative;
+    z-index: 1;
+  }
+  
+
+  .hero-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  }
+  
+  /* Text styling */
+  .hero-section h1, .hero-section p {
+    z-index: 2;
+    position: relative;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  }
+  
+  .hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-section .btn {
+    z-index: 2;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    
+  }
+  
+  /* Products Section Styling */
+  .products-section {
+    background-color:#fcc5ab;
+  }
+  
+  .products-section h2 {
+    font-weight: bold;
+  }
+  
+  .products-section .card {
+    border: none; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .products-section .card:hover {
+    transform: translateY(-10px); 
+  }
+  
+  .products-section .card-img-top {
+    height: 200px;
+    object-fit: cover; 
+  }
+  
+  .products-section .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .products-section .card-text {
+    font-size: 1rem;
+    color: #6c757d; 
+  }
+  
+  .products-section .card-footer {
+    background-color: transparent;
+    border-top: none;
+  }
+  
+  .products-section .btn {
+    background-color: #87A2FF;
+    border:none;
+    padding: 10px 20px;
+  }
+  
+  .products-section .btn:hover {
+    background-color: #dfc741;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  
+    .hero-section .btn {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  
+    .products-section .card-img-top {
+      height: 150px;
+    }
+  }
+  
+  /* Styling for the crousal */
+  .navbar {
+    background: transparent !important; 
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff; 
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #87A2FF;
+  }
+  
+  .navbar-dark .navbar-brand img {
+    filter: brightness(0) invert(1); 
+  }
+  
+  #testimonials {
+    background-color: #f9f9f9;
+  }
+  
+  .testimonial-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  .customer-name {
+    font-weight: bold;
+  }
+  
+  .carousel-item {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-item.fade {
+    opacity: 0;
+  }
+  .carousel-item.active.fade {
+    opacity: 1;
+  }
+ 
+  .container {
+    max-width: 1200px; /
+  }
+
+  .square {
+    width: 90%; 
+    height: 300px; 
+    object-fit: cover; 
+  }
+  
+  /* Influencers Section */
+  #influencers img {
+    width: 150px; 
+    height: 150px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover; 
+    
+  }
+  
+  #influencers img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  }
+  
+  /* Brands Section */
+  #brands img {
+    width: 100px; 
+    height: 100px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover; 
+  }
+  
+  #brands img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #influencers .col-md-3, #brands .col-md-2 {
+      flex: 0 0 50%; 
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #influencers .col-md-3, #brands .col-md-2 {
+      flex: 0 0 100%; 
+      max-width: 100%;
+    }
+  }
+  
+  
+  /* About Section */
+  #about {
+    padding: 60px 0;
+    background-color: #f8f9fa; 
+  }
+  
+  #about h2 {
+    font-size: 2.5rem; 
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333; 
+  }
+  
+  #about p {
+    font-size: 1.2rem; 
+    line-height: 1.8; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    color: #555; 
+  }
+  .about-image {
+    max-width: 90%; 
+    height: auto; 
+    transition: transform 2s ease; 
+    
+  }
+  
+  .about-image:hover {
+    transform: scale(1.09); 
+  }
+  
+  .about-text {
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 1s ease, transform 5s ease; 
+  }
+  
+  .about-text.visible {
+    opacity: 2; 
+    transform: translateY(0); 
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    #about h2 {
+      font-size: 2rem;
+    }
+  
+    #about p {
+      font-size: 1rem; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #about h2 {
+      font-size: 1.8rem; 
+    }
+  
+    #about p {
+      font-size: 0.9rem; 
+    }
+  }
+  /* hover effect for how to grow your business*/
+  
+  .grow-business-section .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  .grow-business-section .card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  }
+  .card-link {
+    color: inherit; 
+  }
+  .card-link2 {
+    color: inherit; 
+  }
+  .card-link3 {
+    color: inherit; 
+  }
+  .card-link4 {
+    color: inherit; 
+  }
+  @media (max-width: 768px) {
+    .card-img-top {
+        height: 150px; 
+    }
+  }
+  /* footer */
+  .custom-footer {
+    background-color: #fcc5ab;
+    color: #272626;
+    padding: 40px 0;
+  }
+  .custom-footer a {
+    color: #141414;
+    text-decoration: none;
+  }
+  .custom-footer a:hover {
+    text-decoration: underline;
+  }
+  .footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    color: #181717;
+  }
+  .social-icons a {
+    color: #0e0d0d;
+    margin-right: 15px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  
+  }
+  .social-icons a:hover {
+    color: #00ccff;
+  }
+  .footer-columns h5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  
+  

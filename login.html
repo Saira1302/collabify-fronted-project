@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: linear-gradient(135deg,#ffefd5, #ffefd5);
+      }
+      
+      .login-container1 {
+        width: 360px;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+      
+      .login-header1 h2 {
+        margin-bottom: 5px;
+        color: #333;
+        font-weight: 600;
+      }
+      
+      .login-header p {
+        margin-bottom: 30px;
+        color: #777;
+      }
+      
+      .input-group {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      
+      .input-group label {
+        color: #555;
+        font-size: 0.9rem;
+      }
+      
+      .input-group input[type="text"],
+      .input-group input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: border 0.3s;
+      }
+      
+      .input-group input:focus {
+        border-color: #ffefd5;
+        outline: none;
+      }
+      
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #fbceb1;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background 0.3s;
+      }
+      
+      button:hover {
+        background-color: #00ccff;
+      }
+      
+      .register-link {
+        margin-top: 15px;
+        color: #777;
+        font-size: 0.9rem;
+      }
+      
+      .register-link a {
+        color: #00ccff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      
+      .register-link a:hover {
+        text-decoration: underline;
+      }
+      
+</style>
+<body>
+
+  <div class="login-container1">
+    <div class="login-header1">
+      <h2>Welcome</h2>
+      <p>Please login to your account</p>
+    </div>
+    <form action="login.php" method="POST">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+      <p class="register-link">Don’t have an account? <a href="#">Sign up</a></p>
+    </form>
+  </div>
+
+</body>
+</html>

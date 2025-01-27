@@ -2,6 +2,13 @@
 
 Welcome to the Brand-Influencer Freelancing Platform! This project is a web-based platform that connects influencers, developers, and brands for collaboration and freelancing opportunities. Built with HTML, CSS, Bootstrap, and JavaScript, this platform aims to provide a space for professionals to showcase their skills and work with potential clients.
 
+![loginn](https://github.com/user-attachments/assets/61a35b45-ff15-43ab-b1d6-b41c5a04d259)
+
+![1st landing](https://github.com/user-attachments/assets/dd93b084-8583-425e-b042-1d109dbea0c0)
+
+![2nd landing](https://github.com/user-attachments/assets/1a58c00f-ab01-47bd-a9ab-46a3ee89eb67)
+
+
 🌟**Features**
 
   ✅ Modern and Responsive UI (Built with Bootstrap)
